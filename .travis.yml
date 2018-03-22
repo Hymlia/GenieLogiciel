@@ -2,4 +2,5 @@
 
 language: java
 sudo: false
+after_deploy : javadoc -private -sourcepath "src/main/java:src/test/java" -d doc/ fr.unistra.fizzbuzz
 
